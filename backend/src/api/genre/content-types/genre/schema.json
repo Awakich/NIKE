@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genres",
+  "info": {
+    "singularName": "genre",
+    "pluralName": "genres",
+    "displayName": "genre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sneakers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sneaker.sneaker",
+      "mappedBy": "genres"
+    }
+  }
+}
