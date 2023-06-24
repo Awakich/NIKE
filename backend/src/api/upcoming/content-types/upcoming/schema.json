@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upcomings",
+  "info": {
+    "singularName": "upcoming",
+    "pluralName": "upcomings",
+    "displayName": "Upcoming",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

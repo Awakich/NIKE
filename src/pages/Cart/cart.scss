@@ -1,0 +1,21 @@
+.cart {
+    &--main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+.cart--bag {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &--title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+}

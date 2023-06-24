@@ -1,0 +1,28 @@
+.error {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 45%;
+    align-items: center;
+
+    .error--right {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &--text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &--title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        &--description {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}

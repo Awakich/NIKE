@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "sneakers",
+  "collectionName": "errors",
   "info": {
-    "singularName": "sneaker",
-    "pluralName": "sneakers",
-    "displayName": "Sneaker",
+    "singularName": "error",
+    "pluralName": "errors",
+    "displayName": "Error",
     "description": ""
   },
   "options": {
@@ -18,12 +18,13 @@
     "description": {
       "type": "text"
     },
-    "price": {
-      "type": "integer",
-      "default": 1
-    },
     "img": {
-      "type": "text"
+      "type": "string"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.button"
     }
   }
 }

@@ -1,0 +1,27 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        a {
+            color: #111;
+        }
+
+        &--img {
+            opacity: 100%;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 80%;
+            }
+        }
+    }
+}
