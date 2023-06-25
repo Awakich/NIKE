@@ -13,7 +13,7 @@ const Shop: FC = ({ }) => {
 
   const sort = sortTypes.sort
   const input = value ? value : ''
-  
+
   return (
     <>
       <>

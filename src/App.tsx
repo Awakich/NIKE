@@ -10,8 +10,7 @@ import Error from './pages/404/Error'
 import Header from './components/Layout/Other/Header/Header'
 
 // console.log(import.meta.env.VITE_URL)
-// Filters (color, price(by minimal))
-// Auth
+// next-Auth
 
 const App = () => {
   return (
