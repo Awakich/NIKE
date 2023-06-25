@@ -1,20 +1,23 @@
 import { FC } from 'react'
-import Header from '../../components/Layout/Other/Header/Header'
-import Footer from '../../components/Layout/Other/Footer/Footer'
 import ShopItem from './ShopItem/ShopItem'
-import filter from '../../assets/Filter.svg'
 import './shop.scss'
+import Footer from '../../components/Layout/Other/Footer/Footer'
+import Filter from './Filter/Filter'
+import { useAppSelector } from '../../redux/hooks'
+import { sortSelector } from '../../redux/slices/filterSlice'
+import { inputSelector } from '../../redux/slices/inputSlice'
 
 const Shop: FC = ({ }) => {
+  const sortTypes = useAppSelector(sortSelector)
+  const value = useAppSelector(inputSelector)
+
+  const sort = sortTypes.sort
+  const input = value ? value : ''
+  
   return (
     <>
-      <Header />
       <>
-        <div className='filter'>
-          <p className='filter--text'>Sort by</p>
-          <img alt="sort-img" src={filter} />
-        </div>
-
+        <Filter />
         <div className='shopitems'>
           <ShopItem />
           <ShopItem />

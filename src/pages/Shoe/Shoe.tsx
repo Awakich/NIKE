@@ -1,8 +1,6 @@
-import React from 'react'
+import { FC } from 'react'
 
-type Props = {}
-
-const Shoe = (props: Props) => {
+const Shoe: FC = ({ }) => {
   return (
     <div>Shoe</div>
   )

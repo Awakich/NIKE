@@ -7,6 +7,7 @@ import Upcoming from './pages/Upcoming/Upcoming'
 import Cart from './pages/Cart/Cart'
 import Favourite from './pages/Favourite/Favourite'
 import Error from './pages/404/Error'
+import Header from './components/Layout/Other/Header/Header'
 
 // console.log(import.meta.env.VITE_URL)
 // Filters (color, price(by minimal))
@@ -15,6 +16,7 @@ import Error from './pages/404/Error'
 const App = () => {
   return (
     <>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/shop/:id' element={<Shoe />} />
@@ -25,6 +27,7 @@ const App = () => {
         <Route path='*' element={<Error />} />
       </Routes>
     </>
+
   )
 }
 

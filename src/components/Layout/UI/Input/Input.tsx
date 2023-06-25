@@ -1,15 +1,18 @@
 import { FC } from 'react'
 import './input.scss'
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
+import { changeInputValue, inputSelector } from '../../../../redux/slices/inputSlice';
 
-interface InputProps { label: string; }
+export const Input: FC = () => {
+    const value = useAppSelector(inputSelector)
+    const dispatch = useAppDispatch()
 
-export const Input: FC<InputProps> = ({
-    label
-}) => {
     return (
         <input
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => dispatch(changeInputValue(e.target.value))}
             className='storybook-input'
-            placeholder={`${label}`}
+            value={value}
+            placeholder='Search for Sneakers'
         />
     );
 }
