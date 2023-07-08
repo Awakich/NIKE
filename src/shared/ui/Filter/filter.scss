@@ -1,0 +1,17 @@
+@import '../../../app/index.scss';
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+    border-bottom: 1px solid $black;
+    margin-bottom: 24px;
+    position: relative;
+
+    &--box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,12 @@
+.soonshoe {
+    position: relative;
+
+    &--text {
+        gap: 4px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    .img--block {
+      margin-bottom: 20px;
+    }
+}

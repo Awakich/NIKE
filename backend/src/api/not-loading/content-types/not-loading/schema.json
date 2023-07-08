@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "not_loadings",
+  "info": {
+    "singularName": "not-loading",
+    "pluralName": "not-loadings",
+    "displayName": "NotLoading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.ui"
+    }
+  }
+}

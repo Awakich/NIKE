@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ui_soons",
+  "info": {
+    "displayName": "Soon"
+  },
+  "options": {},
+  "attributes": {
+    "month": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    }
+  }
+}

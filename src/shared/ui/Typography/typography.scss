@@ -1,0 +1,29 @@
+@import '../../../app/index.scss';
+
+.typography {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    &--bold {
+        font-weight: $bold;
+    }
+
+    &--normal {
+        font-weight: $normal;
+    }
+
+    &--h1 {
+        font-size: $h1;
+    }
+
+    &--h2 {
+        font-size: $h2;
+    }
+
+    &--medium {
+        font-size: $medium;
+    }
+
+    &--small {
+        font-size: $small;
+    }
+}

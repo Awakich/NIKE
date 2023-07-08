@@ -1,0 +1,19 @@
+@import '../../app/index.scss';
+
+.favourite__item {
+    &--text {
+        text-align: start;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        color: $black;
+
+        &--description {
+            color: $light_gray;
+        }
+
+        &--price {
+            margin-top: 20px;
+        }
+    }
+}

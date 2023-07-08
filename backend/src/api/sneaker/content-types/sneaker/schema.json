@@ -19,11 +19,23 @@
       "type": "text"
     },
     "price": {
-      "type": "integer",
-      "default": 1
+      "type": "biginteger"
+    },
+    "Button": {
+      "displayName": "UI",
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.ui"
     },
     "img": {
-      "type": "text"
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

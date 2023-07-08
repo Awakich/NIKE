@@ -1,0 +1,13 @@
+.section {
+    &--pretitle {
+        text-align: start;
+    }
+}
+
+.under_section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}

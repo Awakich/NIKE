@@ -12,23 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "tittle": {
+    "pretitle": {
+      "type": "string"
+    },
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "pretitle": {
-      "type": "string"
-    },
     "Button": {
-      "displayName": "Button",
       "type": "component",
-      "repeatable": false,
-      "component": "button.button"
+      "repeatable": true,
+      "component": "ui.ui"
     },
-    "image": {
-      "type": "string"
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

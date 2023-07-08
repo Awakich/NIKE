@@ -1,0 +1,35 @@
+@import '../../app/index.scss';
+
+.footer {
+    margin-top: 60px;
+    background: $black;
+    color: $white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    &--list {
+        display: flex;
+        list-style: none;
+        gap: 16px;
+
+        &--item {
+            opacity: 100%;
+
+            &:hover {
+                opacity: 80%;
+            }
+
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.copyright {
+    margin-top: 10px;
+    color: $light_gray;
+}

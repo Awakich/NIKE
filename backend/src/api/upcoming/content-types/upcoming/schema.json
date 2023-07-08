@@ -12,14 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "img": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
-    "color": {
+    "description": {
       "type": "string"
+    },
+    "Date": {
+      "displayName": "Soon",
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.soon"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

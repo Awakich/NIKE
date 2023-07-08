@@ -1,0 +1,42 @@
+@import '../../app/index.scss';
+
+.cartitem {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid $black;
+    padding-bottom: 20px;
+
+    &--right {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+    }
+
+    &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $black;
+
+        &--description {
+            color: $light_gray;
+        }
+    }
+
+    &--icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+
+        &--img {
+            opacity: 100%;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 80%;
+            }
+        }
+    }
+}

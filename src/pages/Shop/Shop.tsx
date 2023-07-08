@@ -1,30 +1,36 @@
 import { FC } from 'react'
-import ShopItem from './ShopItem/ShopItem'
+import { useAppSelector } from '../../entities/hooks'
+import { sortSelector } from '../../entities/slices/filterSlice'
+import { inputSelector } from '../../entities/slices/inputSlice'
+import { useQuery } from '@apollo/client'
+import { InfoBlock, Sort } from 'types/models'
+import { Sneakers } from '../../entities/apollo/sneakers'
+import ShopItem from '../../widgets/ShopItem/ShopItem'
+import Footer from '../../shared/Footer/Footer'
+import Filter from '../../shared/ui/Filter/Filter'
+import Loading from '../../shared/ui/Loading/Loading'
+import Error from '../404/Error'
 import './shop.scss'
-import Footer from '../../components/Layout/Other/Footer/Footer'
-import Filter from './Filter/Filter'
-import { useAppSelector } from '../../redux/hooks'
-import { sortSelector } from '../../redux/slices/filterSlice'
-import { inputSelector } from '../../redux/slices/inputSlice'
 
 const Shop: FC = ({ }) => {
-  const sortTypes = useAppSelector(sortSelector)
-  const value = useAppSelector(inputSelector)
+  const sortTypes: Sort = useAppSelector(sortSelector)
+  const value: string = useAppSelector(inputSelector)
+  const AllSneakers = Sneakers(sortTypes)
 
-  const sort = sortTypes.sort
-  const input = value ? value : ''
+  const { data, loading, error } = useQuery(AllSneakers)
+
+  if (loading) return <Loading />
+  if (error) return <Error />
+
 
   return (
     <>
       <>
         <Filter />
         <div className='shopitems'>
-          <ShopItem />
-          <ShopItem />
-          <ShopItem />
-          <ShopItem />
-          <ShopItem />
-          <ShopItem />
+          {data?.sneakers?.data?.filter((shopitem: InfoBlock) => value.toLowerCase() === "" ? shopitem : shopitem.attributes.title.toLowerCase().includes(value.toLowerCase())).map(({ id, attributes }: InfoBlock) => (
+            <ShopItem id={id} key={id} attributes={attributes} />
+          ))}
         </div>
       </>
       <Footer />

@@ -1,0 +1,25 @@
+@import '../../app/index.scss';
+
+.navigation {
+    &--list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        &--item {
+            cursor: pointer;
+            opacity: 100%;
+
+
+            a {
+                color: $black;
+            }
+
+            &:hover {
+                opacity: 80%;
+            }
+        }
+    }
+}

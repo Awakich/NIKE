@@ -1,0 +1,34 @@
+@import '../../app/index.scss';
+
+.link--back {
+    color: $black;
+
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+.shoe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-basis: 45%;
+
+    .img {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+    }
+
+    .text--block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &--description {
+            color: $light_gray;
+            margin-bottom: 20px;
+        }
+    }
+}

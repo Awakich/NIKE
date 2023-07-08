@@ -1,0 +1,26 @@
+@import '../../app/index.scss';
+
+.shop__item {
+    &--text {
+        text-align: start;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        color: $black;
+
+        &--ad {
+            color: $brown;
+        }
+
+        &--description {
+            color: $light_gray;
+        }
+    }
+
+    .img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

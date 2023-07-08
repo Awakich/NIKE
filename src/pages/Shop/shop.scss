@@ -1,9 +1,7 @@
 .shopitems {
-    display: grid;
-    text-align: start;
-    grid-gap: 40px;
     margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px;
+    text-align: center;
 }

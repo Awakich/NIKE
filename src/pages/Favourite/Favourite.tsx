@@ -1,7 +1,7 @@
 import { FC } from "react"
+import FavouriteItem from "../../widgets/FavouriteItem/FavouriteItem"
+import Footer from "../../shared/Footer/Footer"
 import './favourite.scss'
-import FavouriteItem from "./FavouriteItem/FavouriteItem"
-import Footer from "../../components/Layout/Other/Footer/Footer"
 
 
 const Favourite: FC = ({ }) => {

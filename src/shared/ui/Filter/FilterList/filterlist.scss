@@ -1,0 +1,25 @@
+@import '../../../../app/index.scss';
+
+.filter--list {
+    background: $black;
+    color: $white;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    &--item {
+        cursor: pointer;
+        padding: 12px 16px;
+        width: 100%;
+
+        &:hover {
+            opacity: 80%;
+            background: $white;
+            border-radius: 5px 5px 0px 0px;
+            color: $black;
+        }
+    }
+}

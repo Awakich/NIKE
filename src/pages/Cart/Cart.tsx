@@ -1,14 +1,15 @@
 import { FC } from 'react'
+import CartItem from '../../widgets/CartItem/CartItem'
+import Cartcheck from '../../widgets/Cartcheck/Cartcheck'
+import Typography from '../../shared/ui/Typography/Typography'
 import './cart.scss'
-import CartItem from './CartItem/CartItem'
-import Cartcheck from './Cartcheck/Cartcheck'
 
 const Cart: FC = ({ }) => {
   return (
     <section className='cart'>
       <section className='cart--main'>
         <section className='cart--bag'>
-          <h2 className='cart--bag--title'>Bag</h2>
+          <Typography size='medium' text='Bag' key={Math.random().toFixed(12).toString()} weight='bold' />
           <CartItem />
           <CartItem />
         </section>
