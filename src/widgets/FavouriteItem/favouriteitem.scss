@@ -3,17 +3,39 @@
 .favourite__item {
     &--text {
         text-align: start;
-        gap: 10px;
+        gap: $mini;
         display: flex;
         flex-direction: column;
         color: $black;
 
+        &--title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         &--description {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: $light_gray;
         }
 
-        &--price {
-            margin-top: 20px;
+    }
+
+    &--img {
+        border-radius: $mini;
+        margin-bottom: $sm;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .close {
+        opacity: 50%;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 80%;
         }
     }
 }

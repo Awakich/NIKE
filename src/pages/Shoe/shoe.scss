@@ -16,19 +16,31 @@
     flex-basis: 45%;
 
     .img {
-        width: 600px;
-        height: 600px;
-        border-radius: 10px;
+        width: $img;
+        height: $img;
+        border-radius: $mini;
     }
 
     .text--block {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: $mini;
 
         &--description {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: $light_gray;
-            margin-bottom: 20px;
+            margin-bottom: $sm;
+
+            &--icon {
+                cursor: pointer;
+                opacity: 100%;
+
+                &:hover {
+                    opacity: 80%;
+                }
+            }
         }
     }
 }

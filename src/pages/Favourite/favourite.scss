@@ -1,7 +1,9 @@
+@import '../../app/index.scss';
+
 .favourite {
     display: grid;
     text-align: start;
-    grid-gap: 40px;
+    grid-gap: $md;
     margin: 0 auto;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;

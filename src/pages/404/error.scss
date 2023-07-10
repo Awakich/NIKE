@@ -1,18 +1,27 @@
+@import '../../app/index.scss';
+
 .error {
     display: flex;
     justify-content: space-around;
     flex-basis: 45%;
     align-items: center;
 
-    .error--right {
+    &--img {
+        object-fit: cover;
+        width: 100%;
+        max-width: $img;
+        border-radius: $mini;
+    }
+
+    &--right {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: $md;
     }
 
     &--text {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: $mini;
     }
 }

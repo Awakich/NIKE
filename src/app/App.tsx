@@ -8,8 +8,6 @@ import Favourite from '../pages/Favourite/Favourite'
 import Error from '../pages/404/Error'
 import Header from '../shared/Header/Header'
 
-// next-Auth
-
 const App = () => {
   return (
     <>

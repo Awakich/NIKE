@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { useQuery } from '@apollo/client'
 import { AllSections } from '../../entities/apollo/sections'
-import { InfoBlock } from 'types/models'
+import { SectionItems } from '../../types/models'
 import Section from '../../shared/Section/Section'
 import Footer from '../../shared/Footer/Footer'
 import Loading from '../../shared/ui/Loading/Loading'
@@ -18,7 +18,7 @@ const Home: FC = () => {
   return (
     <>
       <div className='sections'>
-        {data.sections.data.map(({ id, attributes }: InfoBlock) => (
+        {data.sections.data.map(({ id, attributes }: SectionItems) => (
           <Section key={id} id={id} attributes={attributes} />
         ))}
       </div>

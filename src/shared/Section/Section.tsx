@@ -1,11 +1,11 @@
 import { FC } from 'react'
 import { ButtonUI } from '../ui/Button/ButtonUI'
 import { Link } from 'react-router-dom'
-import { InfoBlock } from 'types/models'
+import { SectionItems } from 'types/models'
 import Typography from '../ui/Typography/Typography'
 import './section.scss'
 
-const Section: FC<InfoBlock> = ({ attributes: { description, pretitle, title, img, Button } }) => {
+const Section: FC<SectionItems> = ({ attributes: { description, pretitle, title, img, Button } }) => {
   return (
     <section className='section'>
       <div className='section--pretitle'>

@@ -1,0 +1,15 @@
+@import '../../app/index.scss';
+
+.soonshoe {
+  position: relative;
+
+  &--text {
+    gap: $mini;
+    padding-top: $sm;
+    padding-bottom: $sm;
+  }
+
+  .img--block {
+    margin-bottom: $sm;
+  }
+}

@@ -12,6 +12,9 @@ export const Sneakers = (sortTypes: Sort) => {
             title,
             description,
             price,
+            Button{
+                label
+            },
             img{
             data{
                 attributes{

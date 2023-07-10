@@ -1,19 +1,19 @@
 @import '../../app/index.scss';
 
 .footer {
-    margin-top: 60px;
+    margin-top: $footer;
     background: $black;
     color: $white;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding-top: $md;
+    padding-bottom: $sm;
+    padding-left: $sm;
 
     &--list {
         display: flex;
         list-style: none;
-        gap: 16px;
+        gap: $sm;
 
         &--item {
             opacity: 100%;
@@ -30,6 +30,6 @@
 }
 
 .copyright {
-    margin-top: 10px;
+    margin-top: $mini;
     color: $light_gray;
 }

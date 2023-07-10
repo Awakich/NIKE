@@ -9,28 +9,35 @@
   line-height: 1;
   opacity: 100%;
   transition: all;
+  border: 1px solid $black;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
 
   &--primary {
     color: $white;
     background-color: $black;
 
     &:hover {
-      opacity: 85%;
+
+      color: $black;
+      background-color: $white;
     }
   }
 
   &--secondary {
     color: $light_black;
     background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   }
 
   &--small {
-    padding: 8px 22px;
+    padding: $mini $sm;
   }
 
   &--large {
     width: 100%;
-    padding: 20px 150px;
+    padding: $sm 150px;
   }
 }

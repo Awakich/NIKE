@@ -3,7 +3,7 @@
 .shop__item {
     &--text {
         text-align: start;
-        gap: 10px;
+        gap: $mini;
         display: flex;
         flex-direction: column;
         color: $black;
@@ -13,14 +13,32 @@
         }
 
         &--description {
+            display: flex;
             color: $light_gray;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
     .img {
-        border-radius: 10px;
-        margin-bottom: 20px;
+        border-radius: $mini;
+        margin-bottom: $sm;
         width: 100%;
         object-fit: cover;
+    }
+
+    .title--block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--icon {
+            cursor: pointer;
+            opacity: 100%;
+
+            &:hover {
+                opacity: 80%;
+            }
+        }
     }
 }

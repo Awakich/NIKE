@@ -1,16 +1,16 @@
 @import '../../app/index.scss';
 
 .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 60px;
+    padding-top: $sm;
+    padding-bottom: $sm;
+    margin-bottom: $md;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .icons {
         display: flex;
-        gap: 20px;
+        gap: $sm;
         align-items: center;
 
         a {

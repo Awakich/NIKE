@@ -3,15 +3,15 @@
 .filter {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0px;
+    padding: $mini 0;
     border-bottom: 1px solid $black;
-    margin-bottom: 24px;
+    margin-bottom: $sm;
     position: relative;
 
     &--box {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: $mini;
         cursor: pointer;
     }
 }

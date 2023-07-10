@@ -1,9 +1,10 @@
+@import '../../app/index.scss';
+
 .cart {
     &--main {
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        max-width: 1280px;
+        align-items: start;
         margin: 0 auto;
     }
 }
@@ -11,6 +12,5 @@
 .cart--bag {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 24px;
+    gap: $sm;
 }

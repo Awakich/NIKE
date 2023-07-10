@@ -1,6 +1,8 @@
+@import '../../app/index.scss';
+
 .upcoming {
     text-align: center;
     display: grid;
-    grid-gap: 40px;
+    grid-gap: $md;
     grid-template-columns: 1fr 1fr 1fr;
 }

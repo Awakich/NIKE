@@ -1,7 +1,7 @@
 import { FC, memo } from "react"
 import { Link } from "react-router-dom"
-import './footer.scss'
 import Typography from "../ui/Typography/Typography"
+import './footer.scss'
 
 const Footer: FC = memo(({ }) => {
   return (

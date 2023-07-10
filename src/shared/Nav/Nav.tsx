@@ -1,9 +1,10 @@
-import { FC, memo } from 'react'
+import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import Typography from '../ui/Typography/Typography'
 import './nav.scss'
 
-const Nav: FC = memo(({ }) => {
+const Nav: FC = ({ }) => {
+
   return (
     <nav className='navigation'>
       <ul className='navigation--list'>
@@ -19,6 +20,6 @@ const Nav: FC = memo(({ }) => {
       </ul>
     </nav>
   )
-})
+}
 
 export default Nav

@@ -18,17 +18,63 @@ export type Dates = {
     month: string;
 }
 
-export type InfoBlock = {
+export type UserInfo = {
+    picture: string;
+    logged: boolean
+}
+
+export type SectionItems = {
     id?: number;
     attributes: {
         title: string;
         pretitle: string;
         description: string;
-        price: number;
         img?: {
             data: IMG[]
         };
         Button: Button[];
+    }
+}
+
+export type ShopItems = {
+    id?: number;
+    count: number;
+    attributes: {
+        title: string;
+        description: string;
+        price: number;
+        img?: {
+            data: IMG[]
+        };
+        Button: Button;
+    }
+}
+
+export type CartItems = {
+    id?: number;
+    count: number;
+    attributes: {
+        title: string;
+        description: string;
+        price: number;
+        img?: {
+            data: IMG[]
+        };
+        Button: Button;
+    }
+}
+
+export type FavouriteItems = {
+    id?: number;
+    count: number;
+    attributes: {
+        title: string;
+        description: string;
+        price: number;
+        img?: {
+            data: IMG[]
+        };
+        Button: Button;
     }
 }
 

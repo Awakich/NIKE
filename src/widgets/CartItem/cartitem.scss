@@ -3,32 +3,34 @@
 .cartitem {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: $md;
     border-bottom: 1px solid $black;
-    padding-bottom: 20px;
-
-    &--right {
-        display: flex;
-        align-items: start;
-        gap: 20px;
-    }
+    padding-bottom: $sm;
 
     &--text {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: $mini;
         color: $black;
 
         &--description {
             color: $light_gray;
+        }
+
+        &--price {
+            display: flex;
+            flex-direction: row;
+            gap: $mini;
+            align-items: center;
         }
     }
 
     &--icons {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-        margin-top: 20px;
+        gap: $mini;
+        margin-top: $sm;
 
         &--img {
             opacity: 100%;
@@ -38,5 +40,12 @@
                 opacity: 80%;
             }
         }
+
+    }
+
+    &--img {
+        width: 150px;
+        border-radius: $mini;
+        object-fit: cover;
     }
 }

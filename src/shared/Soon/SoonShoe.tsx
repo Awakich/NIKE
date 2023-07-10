@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { Soon } from "types/models"
-import Date from "../../shared/ui/Date/Date"
-import Typography from "../../shared/ui/Typography/Typography"
+import Date from "../ui/Date/Date"
+import Typography from "../ui/Typography/Typography"
 import './soonshoe.scss'
 
 const SoonShoe: FC<Soon> = ({ attributes: { Date: { day, month }, description, title, img } }) => {

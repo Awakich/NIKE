@@ -6,7 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: $md;
 
         &--item {
             cursor: pointer;

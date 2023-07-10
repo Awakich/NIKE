@@ -1,7 +1,9 @@
+@import '../../app/index.scss';
+
 .sections {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 120px;
+    gap: $section;
     text-align: center;
 }
