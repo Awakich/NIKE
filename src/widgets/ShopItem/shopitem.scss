@@ -17,6 +17,18 @@
             color: $light_gray;
             justify-content: space-between;
             align-items: center;
+
+            @media (min-width:360px) {
+                flex-direction: column;
+                align-items: start;
+                gap: $mini / 2;
+            }
+
+            @media (min-width:768px) {
+                flex-direction: row;
+                align-items: center;
+                gap: 0;
+            }
         }
     }
 

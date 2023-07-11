@@ -5,6 +5,7 @@ import { inputSelector } from '../../entities/slices/inputSlice'
 import { useQuery } from '@apollo/client'
 import { ShopItems, Sort } from 'types/models'
 import { Sneakers } from '../../entities/apollo/sneakers'
+import { motion } from 'framer-motion'
 import ShopItem from '../../widgets/ShopItem/ShopItem'
 import Footer from '../../shared/Footer/Footer'
 import Filter from '../../shared/ui/Filter/Filter'
@@ -24,14 +25,14 @@ const Shop: FC = ({ }) => {
 
   return (
     <>
-      <>
+      <motion.div initial={{ y: -100, opacity: 0 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
         <Filter />
         <div className='shopitems'>
           {data?.sneakers?.data?.filter((shopitem: ShopItems) => value.toLowerCase() === "" ? shopitem : shopitem.attributes.title.toLowerCase().includes(value.toLowerCase())).map(({ id, attributes, count }: ShopItems) => (
             <ShopItem id={id} key={id} attributes={attributes} count={count} />
           ))}
         </div>
-      </>
+      </motion.div>
       <Footer />
     </>
   )

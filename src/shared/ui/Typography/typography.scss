@@ -13,14 +13,51 @@
 
     &--h1 {
         font-size: $h1;
+
+        @media (min-width:360px) {
+            font-size: $h3;
+        }
+
+        @media (min-width:640px) {
+            font-size: $h2;
+        }
+
+        @media (min-width:1024px) {
+            font-size: $h1;
+        }
     }
 
     &--h2 {
         font-size: $h2;
+
+        @media (min-width:360px) {
+            font-size: $medium;
+        }
+
+        @media (min-width:1024px) {
+            font-size: $h2;
+        }
     }
 
     &--medium {
         font-size: $medium;
+
+        @media (min-width:360px) {
+            font-size: $small;
+        }
+
+        @media (min-width:640px) {
+            font-size: $small;
+        }
+
+        @media (min-width:1024px) {
+            font-size: $sm;
+        }
+
+        @media (min-width:1280px) {
+            font-size: $medium;
+        }
+
     }
 
     &--small {

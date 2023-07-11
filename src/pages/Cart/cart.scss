@@ -6,6 +6,17 @@
         justify-content: space-around;
         align-items: start;
         margin: 0 auto;
+
+        @media (min-width:360px) {
+            flex-direction: column;
+            gap: $md;
+            padding: 0 $md;
+            margin-bottom: $md;
+        }
+
+        @media (min-width:768px) {
+            flex-direction: row;
+        }
     }
 }
 

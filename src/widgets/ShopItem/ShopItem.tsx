@@ -45,7 +45,7 @@ const ShopItem: FC<ShopItems> = ({ attributes: { img, title, description, price,
     }
 
     return (
-        <section className='shop__item'>
+        <section className='shop__item' >
             <Link to={`/shop/${id}`}>
                 <img alt='sneakers-img' className='img' src={`../../../backend/public${img?.data[0].attributes.url}`} />
             </Link>

@@ -15,10 +15,34 @@
     margin: 0 auto;
     flex-basis: 45%;
 
+    @media (min-width:360px) {
+        flex-direction: column;
+        padding: 0 $md;
+        margin-bottom: $md;
+    }
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        padding: 0 $md;
+        gap: $md;
+    }
+
+    @media (min-width:1024px) {
+        flex-basis: 45%;
+    }
+
     .img {
-        width: $img;
-        height: $img;
+        width: 100%;
+        max-width: $img;
         border-radius: $mini;
+
+        @media (min-width:360px) {
+            max-width: $img / 2;
+        }
+
+        @media (min-width:1024px) {
+            max-width: $img / 1.7;
+        }
     }
 
     .text--block {

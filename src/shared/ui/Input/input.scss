@@ -5,7 +5,7 @@
   border: none;
   outline: none;
   background: $input;
-  padding: 10px 20px;
+  padding: $mini $sm;
   color: $gray;
   position: relative;
 }
@@ -16,6 +16,21 @@
   right: 1%;
   opacity: 50%;
   cursor: pointer;
+
+  @media (min-width:360px) {
+    right: 3%;
+    top: 31%;
+  }
+
+  @media (min-width:576px) {
+    top: 33%;
+    right: 4%;
+  }
+
+  @media (min-width:1024px) {
+    top: 34%;
+    right: 3%;
+  }
 
   &:hover {
     opacity: 80%;

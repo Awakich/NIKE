@@ -8,6 +8,10 @@
     margin-bottom: $sm;
     position: relative;
 
+    @media (min-width:360px) {
+        padding: $small;
+    }
+
     &--box {
         display: flex;
         align-items: center;

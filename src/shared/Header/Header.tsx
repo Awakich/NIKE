@@ -9,7 +9,7 @@ import fav from '../assets/Favourite.svg'
 import cart from '../assets/Cart.svg'
 import '../Header/header.scss'
 
-const Header: FC = ({ }) => {
+const Header: FC = () => {
 
   const [logged, setLogged] = useState<boolean>(false)
   const [userInfo, setUserInfo] = useState<string>("")
@@ -27,15 +27,19 @@ const Header: FC = ({ }) => {
       <Nav />
 
       <div className='icons'>
-        <Link to='/favourite'><img alt="icon fav" src={fav} className='icons--img' /></Link>
-        <Link to='/cart'><img alt="icon cart" src={cart} className='icons--img' /></Link>
-        {!logged ? <GoogleLogin onSuccess={(credentialResponse) => SuccessHandler(credentialResponse)} /> :
+        <div className='icons--group'>
+          <Link to='/favourite'><img alt="icon fav" src={fav} className='icons--img' /></Link>
+          <Link to='/cart'><img alt="icon cart" src={cart} className='icons--img' /></Link>
 
-          <>
-            <img alt="user--img" className='user--img' src={userInfo} />
-            <ButtonUI onClick={() => setLogged(!logged)} label='Log Out' key={Math.random().toFixed(12).toString()} primary={true} size='small' />
-          </>
-        }
+          <div className='icons--login'>
+            {!logged ? <GoogleLogin onSuccess={(credentialResponse) => SuccessHandler(credentialResponse)} /> :
+              <>
+                <img alt="user--img" className='user--img' src={userInfo} />
+                <ButtonUI onClick={() => setLogged(!logged)} label='Log Out' key={Math.random().toFixed(12).toString()} primary={true} size='small' />
+              </>
+            }
+          </div>
+        </div>
       </div>
 
     </section>

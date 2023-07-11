@@ -39,5 +39,13 @@
   &--large {
     width: 100%;
     padding: $sm 150px;
+
+    @media (min-width:360px) {
+      padding: $small;
+    }
+
+    @media (min-width:1280px) {
+      padding: $sm;
+    }
   }
 }

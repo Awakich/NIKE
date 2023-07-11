@@ -8,10 +8,32 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (min-width:360px) {
+        justify-content: space-around;
+    }
+
+    @media (min-width:576px) {
+        justify-content: space-between;
+        padding-right: $mini;
+        padding-left: $mini;
+    }
+
+    .user--img {
+        object-fit: cover;
+        width: 100%;
+        max-width: $md;
+        border-radius: $md;
+    }
+
     .icons {
         display: flex;
         gap: $sm;
         align-items: center;
+
+        &--group {
+            display: flex;
+            gap: $mini;
+        }
 
         a {
             color: $black;
@@ -23,6 +45,12 @@
 
             &:hover {
                 opacity: 80%;
+            }
+        }
+
+        &--login {
+            @media (min-width: 360px) {
+                display: none;
             }
         }
     }

@@ -6,4 +6,18 @@
     grid-gap: $md;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+
+    @media (min-width:360px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 $medium;
+    }
+
+    @media (min-width:768px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 $md;
+    }
+
+    @media (min-width:1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

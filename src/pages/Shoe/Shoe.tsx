@@ -7,6 +7,7 @@ import { Sneaker } from '../../entities/apollo/sneaker'
 import { addCart } from '../../entities/slices/cartSlice'
 import { useAppDispatch } from '../../entities/hooks'
 import { addFavourite } from '../../entities/slices/favouriteSlice'
+import { motion } from 'framer-motion'
 import Loading from '../../shared/ui/Loading/Loading'
 import Error from '../404/Error'
 import Typography from '../../shared/ui/Typography/Typography'
@@ -58,10 +59,12 @@ const Shoe: FC = ({ }) => {
   }
 
   return (
-    <>
+    <motion.section initial={{ y: -100, opacity: 0 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+      
       <Link to={'/shop'} className='link--back'>
         <Typography size='medium' text='Back' key={Math.random().toFixed(12).toString()} weight='bold' />
       </Link>
+
       <section className='shoe'>
         <img className='img' src={`../../../backend/public${data?.sneaker.data.attributes.img.data[0].attributes.url}`} />
 
@@ -76,7 +79,7 @@ const Shoe: FC = ({ }) => {
           <ButtonUI onClick={AddItem} size='large' label={data?.sneaker.data.attributes.Button.label} key={data.sneaker.data.id} primary={true} />
         </div>
       </section>
-    </>
+    </motion.section>
   )
 }
 
