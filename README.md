@@ -13,6 +13,7 @@ Vite, TypeScript, SCSS, StoryBook, Redux-toollkit, framer-motion, strapi, GraphQ
   <li><img style='width: 20px' src="https://seeklogo.com/images/S/strapi-icon-logo-2E03188067-seeklogo.com.png" /><i> Strapi</i> - for CMS</li>
    <li><img style='width: 20px' src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg" /><i> Framer motion</i> - for animations</li>
   <li><i> react-oauth/google</i> - for authentification</li>
+  <li><img style='width: 20px' src="https://brandeps.com/icon-download/E/Eslint-icon-vector-02.svg" /> <img style='width: 20px' src="https://cdn.worldvectorlogo.com/logos/prettier-1.svg" /> <i> Eslint & Prettier</i> - for code quality</li>
 </ul>
 
 <hr/>
