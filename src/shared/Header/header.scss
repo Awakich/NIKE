@@ -33,6 +33,10 @@
         &--group {
             display: flex;
             gap: $mini;
+
+            @media (min-width:768px) {
+                align-items: center;
+            }
         }
 
         a {
@@ -51,6 +55,10 @@
         &--login {
             @media (min-width: 360px) {
                 display: none;
+            }
+
+            @media (min-width:768px) {
+                display: block;
             }
         }
     }

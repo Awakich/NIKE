@@ -32,6 +32,10 @@
     right: 3%;
   }
 
+  @media (min-width:1280px) {
+    right: 2%;
+  }
+
   &:hover {
     opacity: 80%;
   }

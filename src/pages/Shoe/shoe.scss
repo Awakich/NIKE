@@ -37,11 +37,11 @@
         border-radius: $mini;
 
         @media (min-width:360px) {
-            max-width: $img / 2;
+            max-width: calc($img / 2);
         }
 
         @media (min-width:1024px) {
-            max-width: $img / 1.7;
+            max-width: calc($img / 1.7);
         }
     }
 

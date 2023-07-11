@@ -21,7 +21,7 @@
             @media (min-width:360px) {
                 flex-direction: column;
                 align-items: start;
-                gap: $mini / 2;
+                gap: calc($mini / 2);
             }
 
             @media (min-width:768px) {
