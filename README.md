@@ -21,13 +21,15 @@ Vite, TypeScript, SCSS, StoryBook, Redux-toollkit, framer-motion, strapi, GraphQ
 
 ### `npm i` or `yarn` - to install all dependencies
 
+### in /backend  `npm i` or `yarn` - to install all dependencies
+
 <hr/>
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm dev --host` or or `yarn dev --host`
+### `npm dev --host` or or `yarn dev --host` for connect google-auth and open in web into localhost
 
 # 🚀 Getting started with Strapi
 
